@@ -69,9 +69,10 @@ export default {
   },
   mounted() {
     //get items from local storage
-    this.taskArray = JSON.parse(window.localStorage.getItem("ACTIVE_LIST"));
+    this.taskArray =
+      JSON.parse(window.localStorage.getItem("ACTIVE_LIST")) || [];
     this.taskCompletedArray = JSON.parse(
-      window.localStorage.getItem("COMPLETED_LIST")
+      window.localStorage.getItem("COMPLETED_LIST") || []
     );
   },
   methods: {

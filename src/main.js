@@ -3,4 +3,4 @@ import App from "./App.vue";
 
 createApp(App).mount("#app");
 
-import "./assets/global.css";
+import "./global.css";
