@@ -21,8 +21,10 @@
     </form>
     <div class="startMsg" v-if="!taskArray[0]">
       <p>
-        <span class="startMsgSymbol">▩</span>Write a task and click on the Add
-        button to show the task
+        <a href="https://tinyurl.com/3wcyvb7x"
+          ><span class="startMsgSymbol">▩</span></a
+        >
+        Write a task and click on the Add button to show the task
       </p>
     </div>
     <ul class="tasks">
@@ -152,6 +154,9 @@ export default {
 .startMsgSymbol {
   display: block;
   font-size: 70px;
+}
+.startMsgSymbol:hover {
+  cursor: pointer;
 }
 .startMsg {
   display: flex;
